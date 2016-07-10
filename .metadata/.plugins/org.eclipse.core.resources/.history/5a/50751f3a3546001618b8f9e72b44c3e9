@@ -1,0 +1,17 @@
+package com.gmail.overjoo;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int [] ar = {1, 5, 11, 42, 10, 0, 3};
+		System.out.println(arrayMax(ar));
+	}
+	static int arrayMax(int [] a) {
+		int x = a[0];
+		for (int i : a) {
+			if (i > x) x = i;
+		}
+		return x;
+	}
+}

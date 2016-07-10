@@ -1,0 +1,27 @@
+package com.gmail.overjoo;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Input text and press enter");
+		String text = sc.nextLine();
+		int t = countLetter(text, 'a');
+		System.out.println(t);
+		
+		
+	}
+	static int countLetter(String text, char letter) {
+		int totalLetter = 0;
+		char [] letters = text.toCharArray();
+		for (char c : letters) {
+			if (c == letter) {
+				++totalLetter;
+			}
+		}
+		return totalLetter;
+	}
+}

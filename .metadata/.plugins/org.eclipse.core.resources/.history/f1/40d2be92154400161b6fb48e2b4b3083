@@ -1,0 +1,27 @@
+package com.gmail.overjoo;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int app = sc.nextInt();
+		if (app < 1 || app > 144) {
+			System.out.println("WRONG");
+			System.exit(1);
+		}
+		int house, floor;
+			if (app % 36 == 0) {
+				house = app / 36;
+				System.out.println(house);
+			}
+			else {
+				house = app / 36 + 1;
+				System.out.println(house);
+			}
+}
+}
+
+

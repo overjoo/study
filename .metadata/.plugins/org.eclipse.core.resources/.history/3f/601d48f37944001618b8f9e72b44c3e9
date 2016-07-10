@@ -1,0 +1,44 @@
+package com.gmail.overjoo;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// рисуем звезды
+		Scanner sc = new Scanner(System.in);
+		int top = sc.nextInt();
+		for (int a = 0; a < top; a++){
+			int x = 1;
+			if (x < top) {
+				System.out.println(new String(new char[x]).replace("\0", "*"));
+				x++;
+			}
+				
+				
+			else if (x > (top-1))  {
+					String word = new String(new char[x]).replace("\0", "*");
+					String cword = removeLastChar(word);
+					System.out.println(cword);
+					x--;
+					}
+					
+		
+			else if (x == top) {
+			String word = new String(new char[x]).replace("\0", "*");
+			String cword = removeLastChar(word);
+			System.out.println(cword);
+			}
+			System.exit(1);
+		}
+		}
+	
+
+public static String removeLastChar(String s) {
+    if (s == null || s.length() == 0) {
+        return s;
+    }
+    return s.substring(0, s.length()-1);
+}
+}

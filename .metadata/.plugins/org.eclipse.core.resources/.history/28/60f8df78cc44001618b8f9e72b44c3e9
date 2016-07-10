@@ -1,0 +1,30 @@
+package com.gmail.overjoo;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// random array lengh 15 and second array lengh 30 with first array + first array*2
+		double [] a = new double [15];
+		double [] b = new double [30];
+		for (int i = 0; i < a.length; i++) {
+			a[i] = Math.random() * 10;
+			
+		}
+		for (int i = 0; i < a.length; i++) {
+			b[i] = a[i];
+		}
+		for (int i = a.length; i < b.length; i++) {
+			b[i] = a[i - a.length] * 2;
+			
+		}
+		for (double i : a) {
+			System.out.print(i + " ");
+		}
+		System.out.println("");
+		for (double i : b) {
+			System.out.print(i + " ");
+			
+		}
+	}
+
+}

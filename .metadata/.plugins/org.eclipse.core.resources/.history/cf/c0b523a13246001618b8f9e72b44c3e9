@@ -1,0 +1,53 @@
+package com.gmail.overjoo;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a = 5;
+		int b = 3;
+		drawRect(a, b);
+
+
+	static void drawRect(int width, int height)
+	{
+		for (int x = 0; x < height; x++ )
+		{
+			if (x == 0 || x == (height - 1))
+			{
+				drawLine(width);
+			}
+			else
+			{
+				drawSideBorder(width);
+			}	
+		}
+	}
+	
+	static void drawLine( int width)
+	{
+		for (int x = 0 ; x < width; x++ )
+		{
+			System.out.print("*");
+			
+		}
+		System.out.println("");
+	}
+	
+	static void drawSideBorder(int width)
+	{
+		for (int x = 0 ; x < width; x++ )
+		{
+			if (x == 0 || x == (width - 1))
+			{
+				System.out.print("*");
+			}
+			else
+			{
+				System.out.print(" ");
+			}
+			
+		}
+		System.out.println("");
+	}
+}

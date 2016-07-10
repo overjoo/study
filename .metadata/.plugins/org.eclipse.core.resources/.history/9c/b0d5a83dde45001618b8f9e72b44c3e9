@@ -1,0 +1,16 @@
+package com.gmail.overjoo;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	static void drawFigure(int a, int b) {
+		for (int x = 0; x < b; x++) {
+			if (x == 0 || x == (b-1)) {
+				
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+package com.gmail.overjoo;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		// mirror one dimension array
+		int[] a = { 7, 2, 9, 4 };
+		// System.out.println(a.length);
+		if (a.length % 2 == 0)
+			evenmirror(a);
+		//if (a.length % 2 != 0)
+		//	oddmirror(a);
+
+	}
+
+	public static int[] evenmirror(int[] x) {
+		for (int i = x.length/2; i < x.length; i++) {
+			for (int j = x.length/2 - 1; j > 0; j--) {
+				System.out.println(i + j);
+				
+			}
+		}
+		return x;
+	}
+
+	//public static int [] oddmirror(int [] x) {
+	
+	//}
+}
+//0 1 2 3 4
+
+//0 1 2 3

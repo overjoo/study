@@ -1,0 +1,23 @@
+package com.gmail.overjoo;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// рисуем звезды
+		Scanner sc = new Scanner(System.in);
+		int top = sc.nextInt();
+		for (int a = 0; a < top; a++){
+			int x = 0;
+			if (x == 0) {
+				System.out.println(new String(new char[top]).replace("\0", "*"));
+				{
+			}
+		}
+
+	}
+
+}
+}

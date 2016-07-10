@@ -1,0 +1,21 @@
+package com.gmail.overjoo;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		for (int i = 1; i < 100; i++){
+			for (int ii = 1; ii < 100; ii++){
+				
+				System.out.println(i + " " + ii + " " + ii % i);
+				if (ii % i == 0){
+				
+				}
+				if (ii == 1) ii++;
+			}
+		}
+		
+}
+}

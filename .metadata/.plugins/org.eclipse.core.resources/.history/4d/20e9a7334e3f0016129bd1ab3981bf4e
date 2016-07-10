@@ -1,0 +1,30 @@
+package com.gmail.overjoo;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Main {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		BufferedReader bure = new BufferedReader(new InputStreamReader(System.in));
+		int monthSal = 35070, monthDay = 31, savings = 10000;
+		int expenses = monthSal - savings;
+		int expensesPerDay = expenses / monthDay;
+		System.out.println("Enter today's date (format 'd')");
+		String todayS = bure.readLine();
+		int todayI = Integer.parseInt(todayS);
+		double moneyleft = monthSal- expensesPerDay * todayI;
+		System.out.println("Сейчас на карте должно быть не меньше " + moneyleft);
+		System.out.println("В день трать не больше " + expensesPerDay);
+		System.out.println("В неделю трать не больше " + expensesPerDay * 7 );
+
+		
+			
+		}
+		
+				
+	}
+
+

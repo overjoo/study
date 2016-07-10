@@ -1,0 +1,23 @@
+package com.gmail.overjoo;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a = 5;
+		int b = 3;
+
+	}
+	static void drawFigure(int a, int b) {
+		for (int x = 0; x < b; x++) {
+			if (x == 0 || x == (b-1)) {
+				String g = new String(new char[a]).replace("\0", "*");
+				System.out.println(g);
+			}
+			System.out.println("*");
+			for (int y = 0; y < (b-2); y++) {
+				System.out.println(" ");
+			}
+		}
+	}
+}
